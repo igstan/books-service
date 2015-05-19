@@ -15,7 +15,7 @@ RUN wget -q https://dl.bintray.com/sbt/debian/sbt-0.13.7.deb && \
     rm sbt-0.13.7.deb
 
 RUN mkdir -p /data/db
-ENV TEST_TYPE "spec"
+ENV TEST_TYPE "integ"
 ENV DOMAIN "http://172.17.42.1"
 VOLUME ["/source", "/root/.ivy2/cache"]
 WORKDIR /source
