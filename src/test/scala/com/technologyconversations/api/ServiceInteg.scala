@@ -13,9 +13,7 @@ class ServiceInteg extends Specification {
 
     "return OK" in {
       val response: HttpResponse[String] = Http(uri).asString
-      response.code must equalTo(200)
+      response.code must equalTo(201)
     }
-
   }
-
 }
